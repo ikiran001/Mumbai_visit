@@ -1,4 +1,5 @@
 import Reveal from './Reveal';
+import SafeImage from './SafeImage';
 import { places } from '../data/content';
 
 export default function Places() {
@@ -15,7 +16,7 @@ export default function Places() {
             <Reveal key={place.name}>
               <article className="place-card">
                 <div className="place-img">
-                  <img src={place.image} alt={place.name} />
+                  <SafeImage src={place.image} alt={place.name} />
                   <span className="place-tag">{place.tag}</span>
                 </div>
                 <div className="place-body">

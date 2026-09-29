@@ -1,3 +1,5 @@
+import { images } from './images';
+
 export const navLinks = [
   { href: '#hero', label: 'Home' },
   { href: '#about', label: 'About' },
@@ -9,29 +11,29 @@ export const navLinks = [
 ];
 
 export const places = [
-  { name: 'Gateway of India', tag: 'Iconic', image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80', description: "Built in 1924 overlooking the Arabian Sea, this triumphal arch welcomed King George V. Today it's Mumbai's most photographed monument — especially magical at sunrise when the ferries leave for Elephanta.", location: 'Apollo Bunder, Colaba' },
-  { name: 'Marine Drive', tag: 'Sunset', image: 'https://images.unsplash.com/photo-1609137144813-7d992133a583?w=800&q=80', description: "The Queen's Necklace — a 3.6 km curved boulevard along the coast. Locals gather here every evening. Sitting on the promenade with chai while the streetlights curve into the horizon is pure Mumbai therapy.", location: 'Netaji Subhash Chandra Bose Road' },
-  { name: 'Taj Mahal Palace', tag: 'Heritage', image: 'https://images.unsplash.com/photo-1564507592333-c60657eea4d6?w=800&q=80', description: "India's most legendary hotel since 1903, facing the Gateway. Its dome and red brick facade are symbols of luxury and resilience.", location: 'Colaba, South Mumbai' },
-  { name: 'Bandra-Worli Sea Link', tag: 'Modern', image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&q=80', description: 'A cable-stayed bridge connecting Bandra to Worli across the bay. Driving across at night with the city lights reflecting on water feels futuristic.', location: 'Bandra — Worli' },
-  { name: 'Elephanta Caves', tag: 'UNESCO', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80', description: 'Ancient rock-cut temples on Elephanta Island. The massive Trimurti sculpture of Shiva is breathtaking.', location: 'Elephanta Island (ferry from Gateway)' },
-  { name: 'Juhu Beach', tag: 'Beach', image: 'https://images.unsplash.com/photo-1605647540924-852290f6e0d5?w=800&q=80', description: 'Where Bollywood stars jog and families fly kites on weekends. Try bhel puri from a beach vendor.', location: 'Juhu, Western Suburbs' },
-  { name: 'Chhatrapati Shivaji Terminus', tag: 'Heritage', image: 'https://images.unsplash.com/photo-1524492412937-29c9667dfdc0?w=800&q=80', description: "A UNESCO World Heritage Site and one of the busiest railway stations on earth. Victorian Gothic architecture meets millions of daily commuters.", location: 'Fort, South Mumbai' },
-  { name: 'Haji Ali Dargah', tag: 'Spiritual', image: 'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=800&q=80', description: 'A mosque and tomb on an islet connected by a causeway — accessible only at low tide.', location: 'Worli, off coast' },
+  { name: 'Gateway of India', tag: 'Iconic', image: images.gateway, description: "Built in 1924 overlooking the Arabian Sea, this triumphal arch welcomed King George V. Today it's Mumbai's most photographed monument — especially magical at sunrise when the ferries leave for Elephanta.", location: 'Apollo Bunder, Colaba' },
+  { name: 'Marine Drive', tag: 'Sunset', image: images.marineDrive, description: "The Queen's Necklace — a 3.6 km curved boulevard along the coast. Locals gather here every evening. Sitting on the promenade with chai while the streetlights curve into the horizon is pure Mumbai therapy.", location: 'Netaji Subhash Chandra Bose Road' },
+  { name: 'Taj Mahal Palace', tag: 'Heritage', image: images.gatewayTaj, description: "India's most legendary hotel since 1903, facing the Gateway. Its dome and red brick facade are symbols of luxury and resilience.", location: 'Colaba, South Mumbai' },
+  { name: 'Bandra-Worli Sea Link', tag: 'Modern', image: images.seaLink, description: 'A cable-stayed bridge connecting Bandra to Worli across the bay. Driving across at night with the city lights reflecting on water feels futuristic.', location: 'Bandra — Worli' },
+  { name: 'Elephanta Caves', tag: 'UNESCO', image: images.elephanta, description: 'Ancient rock-cut temples on Elephanta Island. The massive Trimurti sculpture of Shiva is breathtaking.', location: 'Elephanta Island (ferry from Gateway)' },
+  { name: 'Juhu Beach', tag: 'Beach', image: images.juhuBeach, description: 'Where Bollywood stars jog and families fly kites on weekends. Try bhel puri from a beach vendor.', location: 'Juhu, Western Suburbs' },
+  { name: 'Chhatrapati Shivaji Terminus', tag: 'Heritage', image: images.cstm, description: "A UNESCO World Heritage Site and one of the busiest railway stations on earth. Victorian Gothic architecture meets millions of daily commuters.", location: 'Fort, South Mumbai' },
+  { name: 'Haji Ali Dargah', tag: 'Spiritual', image: images.hajiAli, description: 'A mosque and tomb on an islet connected by a causeway — accessible only at low tide.', location: 'Worli, off coast' },
 ];
 
 export const featuredResort = {
   name: 'The Taj Mahal Palace, Mumbai',
-  image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80',
+  image: images.resortFeatured,
   description: 'The crown jewel of Indian hospitality. I had high tea at Sea Lounge with a view of the Gateway — scones, masala chai, and the sound of waves.',
   amenities: ['Sea-facing rooms', '9 restaurants & bars', 'Jiva Spa', 'Heritage tours'],
   area: 'Colaba · South Mumbai',
 };
 
 export const resorts = [
-  { name: 'ITC Maratha', image: 'https://images.unsplash.com/photo-1611892440504-42a784e15d7f?w=600&q=80', description: 'Inspired by the Maratha dynasty — grand courtyards, lotus motifs, and one of the best Sunday brunches in the city.', area: 'Andheri East · Near Airport' },
-  { name: 'JW Marriott Mumbai Juhu', image: 'https://images.unsplash.com/photo-1571008887538-b36bb08f4571?w=600&q=80', description: 'Steps from Juhu Beach with panoramic sea views from the pool deck. Woke up to sunrise over the Arabian Sea every morning.', area: 'Juhu · Beachfront' },
-  { name: 'The St. Regis Mumbai', image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80', description: "Ultra-luxury in Lower Parel with butler service. Mumbai's skyline from the 40th floor — simply unreal.", area: 'Lower Parel · Central Mumbai' },
-  { name: 'The Resort Mumbai', image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80', description: 'A hidden oasis in Madh Island — lush gardens, private beach access, and a peaceful escape from city noise.', area: 'Madh Island · Off coast' },
+  { name: 'ITC Maratha', image: images.resortItc, description: 'Inspired by the Maratha dynasty — grand courtyards, lotus motifs, and one of the best Sunday brunches in the city.', area: 'Andheri East · Near Airport' },
+  { name: 'JW Marriott Mumbai Juhu', image: images.resortMarriott, description: 'Steps from Juhu Beach with panoramic sea views from the pool deck. Woke up to sunrise over the Arabian Sea every morning.', area: 'Juhu · Beachfront' },
+  { name: 'The St. Regis Mumbai', image: images.resortStRegis, description: "Ultra-luxury in Lower Parel with butler service. Mumbai's skyline from the 40th floor — simply unreal.", area: 'Lower Parel · Central Mumbai' },
+  { name: 'The Resort Mumbai', image: images.resortMadh, description: 'A hidden oasis in Madh Island — lush gardens, private beach access, and a peaceful escape from city noise.', area: 'Madh Island · Off coast' },
 ];
 
 export const timeline = [
@@ -43,14 +45,14 @@ export const timeline = [
 ];
 
 export const gallery = [
-  { src: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=900&q=80', label: 'Gateway of India', className: 'wide' },
-  { src: 'https://images.unsplash.com/photo-1609137144813-7d992133a583?w=600&q=80', label: 'Marine Drive' },
-  { src: 'https://images.unsplash.com/photo-1564507592333-c60657eea4d6?w=600&q=80', label: 'Taj Palace', className: 'tall' },
-  { src: 'https://images.unsplash.com/photo-1605647540924-852290f6e0d5?w=600&q=80', label: 'Juhu Beach' },
-  { src: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=600&q=80', label: 'Sea Link' },
-  { src: 'https://images.unsplash.com/photo-1524492412937-29c9667dfdc0?w=900&q=80', label: 'CSMT Station', className: 'wide' },
-  { src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80', label: 'Elephanta' },
-  { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80', label: 'Resort Life' },
+  { src: images.gateway, label: 'Gateway of India', className: 'wide' },
+  { src: images.marineDrive, label: 'Marine Drive' },
+  { src: images.gatewayTaj, label: 'Taj Palace', className: 'tall' },
+  { src: images.juhuBeach, label: 'Juhu Beach' },
+  { src: images.seaLink, label: 'Sea Link' },
+  { src: images.cstm, label: 'CSMT Station', className: 'wide' },
+  { src: images.elephanta, label: 'Elephanta' },
+  { src: images.resortFeatured, label: 'Resort Life' },
 ];
 
 export const foodItems = [
@@ -69,3 +71,5 @@ export const tips = [
   { icon: '🛡️', title: 'Stay Aware', text: 'Mumbai is generally safe, but keep valuables secure in crowded areas like stations and markets.' },
   { icon: '🌅', title: 'Best Time', text: 'November to February offers pleasant weather — ideal for walking tours and beach visits.' },
 ];
+
+export { images };

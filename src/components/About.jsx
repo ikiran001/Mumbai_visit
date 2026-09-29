@@ -1,4 +1,6 @@
 import Reveal from './Reveal';
+import SafeImage from './SafeImage';
+import { images } from '../data/images';
 
 export default function About() {
   return (
@@ -17,7 +19,7 @@ export default function About() {
             </ul>
           </Reveal>
           <Reveal className="about-image">
-            <img src="https://images.unsplash.com/photo-1587474260587-136574528ed5?w=800&q=80" alt="Mumbai skyline at dusk" />
+            <SafeImage src={images.about} alt="Mumbai skyline at dusk" />
             <div className="about-badge">मुंबई · Mumbai</div>
           </Reveal>
         </div>

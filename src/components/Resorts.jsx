@@ -1,4 +1,5 @@
 import Reveal from './Reveal';
+import SafeImage from './SafeImage';
 import { featuredResort, resorts } from '../data/content';
 
 export default function Resorts() {
@@ -13,7 +14,7 @@ export default function Resorts() {
 
         <Reveal className="resort-featured">
           <div className="resort-featured-img">
-            <img src={featuredResort.image} alt={featuredResort.name} />
+            <SafeImage src={featuredResort.image} alt={featuredResort.name} />
           </div>
           <div className="resort-featured-body">
             <span className="resort-stars">★★★★★</span>
@@ -30,7 +31,7 @@ export default function Resorts() {
           {resorts.map((r) => (
             <Reveal key={r.name}>
               <article className="resort-card">
-                <img src={r.image} alt={r.name} />
+                <SafeImage src={r.image} alt={r.name} />
                 <div className="resort-card-body">
                   <h4>{r.name}</h4>
                   <p>{r.description}</p>

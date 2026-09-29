@@ -1,5 +1,7 @@
 import Reveal from './Reveal';
+import SafeImage from './SafeImage';
 import { foodItems } from '../data/content';
+import { images } from '../data/images';
 
 export default function Food() {
   return (
@@ -17,7 +19,7 @@ export default function Food() {
             </ul>
           </div>
           <div className="food-image">
-            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=700&q=80" alt="Indian street food" />
+            <SafeImage src={images.streetFood} alt="Indian street food" />
           </div>
         </Reveal>
       </div>

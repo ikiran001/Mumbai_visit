@@ -1,9 +1,9 @@
-const HERO_IMG = 'https://images.unsplash.com/photo-1566552881560-0be862a7c445?w=1920&q=80';
+import { images } from '../data/images';
 
 export default function Hero() {
   return (
     <header className="hero" id="hero">
-      <div className="hero-bg" style={{ backgroundImage: `url('${HERO_IMG}')` }} />
+      <div className="hero-bg" style={{ backgroundImage: `url('${images.hero}')` }} />
       <div className="hero-overlay" />
       <div className="hero-content">
         <p className="hero-tag">First time in the City of Dreams</p>

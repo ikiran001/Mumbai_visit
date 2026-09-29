@@ -1,4 +1,5 @@
 import Reveal from './Reveal';
+import SafeImage from './SafeImage';
 import { gallery } from '../data/content';
 
 export default function Gallery() {
@@ -13,7 +14,7 @@ export default function Gallery() {
         <div className="gallery-grid">
           {gallery.map((item) => (
             <Reveal key={item.label} className={`gallery-item${item.className ? ` ${item.className}` : ''}`}>
-              <img src={item.src} alt={item.label} />
+              <SafeImage src={item.src} alt={item.label} />
               <span>{item.label}</span>
             </Reveal>
           ))}
